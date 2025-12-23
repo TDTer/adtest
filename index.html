@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Trang chính</title>
-    <style>
-      body {
-        font-family: system-ui, Arial, sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-        background: #f6f8fa;
-      }
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang chính</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f6f8fa;
+    }
+
+    .container {
+      display: flex;
+      gap: 16px;
+    }
+
+    button {
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #f0f0f0;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #555;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
       .container {
-        display: flex;
-        gap: 16px;
-      }
-
-      button {
-        padding: 12px 18px;
-        font-size: 16px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        background: #fff;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background: #f0f0f0;
-      }
-
-      .btn-group {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 8px;
       }
+    }
+  </style>
+</head>
 
-      .desc {
-        font-size: 14px;
-        color: #555;
-        max-width: 320px;
-        text-align: center;
-      }
-
-      @media (max-width: 680px) {
-        .container {
-          flex-direction: column;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="btn-group">
-        <button id="btn1" title="Mở Tiny17_ChooseTheme">
-          Mở Tiny17_ChooseTheme
-        </button>
-        <div class="desc">Chọn chủ đề</div>
-      </div>
-      <div class="btn-group">
-        <button id="btn2" title="Mở Tiny17_HelpTheDog">
-          Mở Tiny17_HelpTheDog
-        </button>
-        <div class="desc">Giúp đỡ chú chó</div>
-      </div>
-      <div class="btn-group">
-        <button id="btn3" title="Mở Tiny17_Vintage">Mở Tiny17_Vintage</button>
-        <div class="desc">Chủ đề cổ điển</div>
-      </div>
+<body>
+  <div class="container">
+    <div class="btn-group">
+      <button id="btn1" title="Mở Tiny17_Xmas">
+        Mở Tiny17_Xmas
+      </button>
+      <div class="desc">🎅🎄❄️☃️🎁</div>
     </div>
-    <script>
-      document.getElementById("btn1").addEventListener("click", function () {
-        window.location.href = "Tiny17_ChooseTheme.html";
-      });
-      document.getElementById("btn2").addEventListener("click", function () {
-        window.location.href = "Tiny17_HelpTheDog.html";
-      });
-      document.getElementById("btn3").addEventListener("click", function () {
-        window.location.href = "Tiny17_Vintage.html";
-      });
-    </script>
-  </body>
+    <div class="btn-group">
+      <button id="btn2" title="Mở Tiny17_Princess">
+        Mở Tiny17_Princess
+      </button>
+      <div class="desc">Princess 👸🏻</div>
+    </div>
+    <div class="btn-group">
+      <button id="btn3" title="Mở Tiny17_Purple">Mở Tiny17_Purple</button>
+      <div class="desc">💜🟪👾🟣</div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("btn1").addEventListener("click", function () {
+      window.location.href = "Tiny17_Xmas.html";
+    });
+    document.getElementById("btn2").addEventListener("click", function () {
+      window.location.href = "Tiny17_Princess.html";
+    });
+    document.getElementById("btn3").addEventListener("click", function () {
+      window.location.href = "Tiny17_Purple.html";
+    });
+  </script>
+</body>
+
 </html>
